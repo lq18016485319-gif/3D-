@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6px 20px 0;
+  padding: 18px 24px 0;
   mix-blend-mode: multiply;
 }
 
@@ -29,9 +29,9 @@
   padding: 6px 2px 9px;
   color: var(--ink);
   font-family: var(--font-ui);
-  font-size: 12.5px;
+  font-size: 11px;
   font-weight: 400;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.15em;
   white-space: nowrap;
 }
 
@@ -124,7 +124,7 @@
     gap: 0;
     min-width: min(240px, calc(100vw - 32px));
     padding: 2px 0;
-    background: var(--paper);
+    background: rgba(250, 247, 242, 0.96);
     border: 1px solid rgba(20, 22, 26, 0.14);
     box-shadow: 0 20px 44px -22px rgba(20, 22, 26, 0.5);
     animation: navMenuIn 0.22s var(--ease-out) both;
