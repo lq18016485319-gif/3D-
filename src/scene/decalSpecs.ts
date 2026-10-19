@@ -39,7 +39,7 @@ export const DOOR1_DECALS: readonly DecalSpec[] = []
 export const DOOR4_DECALS: readonly DecalSpec[] = []
 
 /**
- * 第 2 扇门的内侧 —— 翻开后正对观众的那一面，贴纸最密的地方。
+ * 第 2 扇门的内侧 —— 翻开后正对观众的那一面，少量保留生活感的贴纸。
  *
  * ABOUT 的入口是工牌，它已经不在这张表里：贴花是零厚度的平面，工牌挂在
  * 实体挂钩上、还要被钩尖穿过吊环，做成实体才成立。现在它是 PhysicalProps
@@ -52,27 +52,13 @@ export const DOOR2_INNER_DECALS: readonly DecalSpec[] = [
   { id: 'stk-jad', url: '/assets/obj2/stk10.webp', left: 0.06, top: 0.1, width: 0.34, draggable: true },
   { id: 'stk-nowadays', url: '/assets/obj2/stk11.webp', left: 0.49, top: 0.09, width: 0.34, draggable: true },
   { id: 'tapes', url: '/assets/obj/tapes.webp', left: 0.03, top: 0.46, width: 0.26, draggable: true },
-  { id: 'stk-love', url: '/assets/obj2/stk6.webp', left: 0.04, top: 0.14, width: 0.21, rot: -4, draggable: true },
-  { id: 'stk-wizard', url: '/assets/obj2/stk5.webp', left: 0.72, top: 0.18, width: 0.18, rot: 6, draggable: true },
-  { id: 'stk-girl', url: '/assets/obj2/stk1.webp', left: 0.04, top: 0.29, width: 0.17, rot: -2, draggable: true },
-  { id: 'stk-cat', url: '/assets/obj2/stk3.webp', left: 0.71, top: 0.3, width: 0.17, rot: 3, draggable: true },
   { id: 'stk-photo', url: '/assets/obj2/stk4.webp', left: 0.13, top: 0.45, width: 0.14, rot: -5, draggable: true },
-  { id: 'stk-duo', url: '/assets/obj2/stk2.webp', left: 0.42, top: 0.435, width: 0.25, rot: 2, draggable: true },
-  { id: 'stk-red', url: '/assets/obj2/stk7.webp', left: 0.49, top: 0.57, width: 0.24, rot: -3, draggable: true },
-  { id: 'stk-omg', url: '/assets/obj2/stk8.webp', left: 0.26, top: 0.605, width: 0.23, rot: 4, draggable: true },
   { id: 'stk-flower', url: '/assets/obj2/stk9.webp', left: 0.73, top: 0.54, width: 0.13, rot: -6, draggable: true },
 
-  // 原版的门内侧从中段一直铺到打字机上沿。现有资源没有那些手写纸条和
-  // 破碎爱心的独立纹理，因此复用同一图集里的小贴纸做第二组拼贴；尺寸、
-  // 倾角和疏密都刻意错开，避免看起来像规则重复的贴纸墙。0.85 以下留给
+  // 原版门内侧有更多贴纸，为了减少视觉噪音，此版暂时不展示那些
+  // 装饰。
+  // 0.85 以下留给
   // 吸附在门板底部的实体打字机，拖动时也不会被这些默认位置挡住。
-  { id: 'stk-love-lower', url: '/assets/obj2/stk6.webp', left: 0.06, top: 0.69, width: 0.16, rot: 7, draggable: true },
-  { id: 'stk-photo-lower', url: '/assets/obj2/stk4.webp', left: 0.25, top: 0.72, width: 0.11, rot: 5, draggable: true },
-  { id: 'stk-duo-lower', url: '/assets/obj2/stk2.webp', left: 0.4, top: 0.735, width: 0.2, rot: -5, draggable: true },
-  { id: 'stk-wizard-lower', url: '/assets/obj2/stk5.webp', left: 0.69, top: 0.7, width: 0.15, rot: -8, draggable: true },
-  { id: 'stk-girl-lower', url: '/assets/obj2/stk1.webp', left: 0.04, top: 0.775, width: 0.13, rot: 4, draggable: true },
-  { id: 'stk-omg-lower', url: '/assets/obj2/stk8.webp', left: 0.59, top: 0.79, width: 0.18, rot: 6, draggable: true },
-  { id: 'stk-flower-lower', url: '/assets/obj2/stk9.webp', left: 0.82, top: 0.79, width: 0.1, rot: -8, draggable: true },
 ]
 
 /* ============================================================================
