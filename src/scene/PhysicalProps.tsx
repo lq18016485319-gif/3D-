@@ -23,24 +23,24 @@ const SHADOWS = { castShadow: true, receiveShadow: true } as const
 const Y_AXIS = new Vector3(0, 1, 0)
 
 const PROP_COLORS = {
-  cream: '#fff7de',
-  paper: '#fffdf6',
-  ink: '#493b35',
-  softBlue: '#9ed1ea',
-  blue: '#5aa7d5',
-  blueEdge: '#4c8fb7',
-  lilac: '#c9b6ee',
-  pink: '#f3bfd5',
-  peach: '#f0a26c',
-  yellow: '#f4c652',
-  orange: '#e9a13e',
-  orangeDark: '#b97828',
-  mint: '#b9dfc0',
-  aqua: '#addddd',
-  metal: '#aeb8bd',
-  darkMetal: '#68747b',
-  record: '#26282a',
-  wood: '#b77f3c',
+  cream: '#f8f1e7',
+  paper: '#fffdf9',
+  ink: '#4d463e',
+  softBlue: '#c7c4c0',
+  blue: '#aca9a6',
+  blueEdge: '#928d87',
+  lilac: '#d7ccc8',
+  pink: '#ddcbc8',
+  peach: '#d5bbad',
+  yellow: '#d7c6ad',
+  orange: '#c7b39d',
+  orangeDark: '#8d7766',
+  mint: '#b9c7b5',
+  aqua: '#cfdbd6',
+  metal: '#aca9a6',
+  darkMetal: '#6b6762',
+  record: '#32302f',
+  wood: '#ad947b',
 } as const
 
 type RoundedPartProps = {
@@ -138,10 +138,10 @@ function usePrintedLabel(kind: 'selected-work' | 'contact' | 'skills') {
     if (!context) return new CanvasTexture(canvas)
 
     context.fillStyle =
-      kind === 'selected-work' ? '#fff1c6' : kind === 'skills' ? '#f8fbf7' : '#fffdf6'
+      kind === 'selected-work' ? '#f4eee6' : kind === 'skills' ? '#f8f5f0' : '#fffdf9'
     context.fillRect(0, 0, canvas.width, canvas.height)
     context.strokeStyle =
-      kind === 'selected-work' ? '#dc9a40' : kind === 'skills' ? '#9bd9dc' : '#cabfb1'
+      kind === 'selected-work' ? '#c4b5a4' : kind === 'skills' ? '#d2c7bc' : '#cabfb1'
     context.lineWidth = 14
     context.strokeRect(18, 18, canvas.width - 36, canvas.height - 36)
 
@@ -149,21 +149,21 @@ function usePrintedLabel(kind: 'selected-work' | 'contact' | 'skills') {
       context.textAlign = 'center'
       context.textBaseline = 'middle'
       context.font = '900 96px Georgia, serif'
-      context.fillStyle = '#db743a'
+      context.fillStyle = '#78685e'
       context.fillText('SELECTED', canvas.width / 2, 145)
-      context.fillStyle = '#45aeca'
+      context.fillStyle = '#9a897a'
       context.fillText('WORK', canvas.width / 2, 255)
       context.font = '800 86px sans-serif'
-      context.fillStyle = '#d97c3a'
+      context.fillStyle = '#78685e'
       context.fillText('作品展示', canvas.width / 2, 405)
     } else if (kind === 'skills') {
       context.textAlign = 'center'
       context.textBaseline = 'middle'
       context.font = '800 104px sans-serif'
-      context.fillStyle = '#36afc4'
+      context.fillStyle = '#78685e'
       context.fillText('个人技能', canvas.width / 2, 178)
       context.font = '900 112px Georgia, serif'
-      context.fillStyle = '#df7b42'
+      context.fillStyle = '#b0a092'
       context.fillText('SKILLS', canvas.width / 2, 315)
       context.strokeStyle = '#d8c7aa'
       context.lineWidth = 5
@@ -199,16 +199,16 @@ function usePrintedLabel(kind: 'selected-work' | 'contact' | 'skills') {
 }
 
 const BOOKS = [
-  { x: -0.34, w: 0.074, h: 0.46, color: '#758fdf', tilt: 0 },
-  { x: -0.262, w: 0.066, h: 0.42, color: '#f1b692', tilt: 0 },
-  { x: -0.191, w: 0.064, h: 0.41, color: '#ffe2b3', tilt: 0 },
-  { x: -0.12, w: 0.07, h: 0.39, color: '#fff2b2', tilt: 0 },
-  { x: -0.044, w: 0.068, h: 0.44, color: '#efa478', tilt: 0 },
-  { x: 0.034, w: 0.065, h: 0.46, color: '#fff0a9', tilt: 0 },
-  { x: 0.108, w: 0.067, h: 0.43, color: '#f8f4d5', tilt: 0 },
-  { x: 0.181, w: 0.068, h: 0.41, color: '#d5eef1', tilt: 0 },
-  { x: 0.26, w: 0.07, h: 0.36, color: '#f5e9dc', tilt: 0 },
-  { x: 0.337, w: 0.06, h: 0.32, color: '#ec9ac4', tilt: -0.13 },
+  { x: -0.34, w: 0.074, h: 0.46, color: '#9eaba8', tilt: 0 },
+  { x: -0.262, w: 0.066, h: 0.42, color: '#c7b5a8', tilt: 0 },
+  { x: -0.191, w: 0.064, h: 0.41, color: '#eee2d1', tilt: 0 },
+  { x: -0.12, w: 0.07, h: 0.39, color: '#bcb0a2', tilt: 0 },
+  { x: -0.044, w: 0.068, h: 0.44, color: '#d8c7b7', tilt: 0 },
+  { x: 0.034, w: 0.065, h: 0.46, color: '#f4e8da', tilt: 0 },
+  { x: 0.108, w: 0.067, h: 0.43, color: '#c4c0b7', tilt: 0 },
+  { x: 0.181, w: 0.068, h: 0.41, color: '#d8ded8', tilt: 0 },
+  { x: 0.26, w: 0.07, h: 0.36, color: '#ebe4d9', tilt: 0 },
+  { x: 0.337, w: 0.06, h: 0.32, color: '#b7aca5', tilt: -0.13 },
 ] as const
 
 /** Bottom-centred row of individually modelled books (front faces +Z). */
