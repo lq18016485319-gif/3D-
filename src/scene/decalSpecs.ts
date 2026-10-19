@@ -51,14 +51,10 @@ export const DOOR2_INNER_DECALS: readonly DecalSpec[] = [
   // 与参考逐像素吻合。倾角（−3°/+4°）已烘进贴图，不再给 rot。
   { id: 'stk-jad', url: '/assets/obj2/stk10.webp', left: 0.06, top: 0.1, width: 0.34, draggable: true },
   { id: 'stk-nowadays', url: '/assets/obj2/stk11.webp', left: 0.49, top: 0.09, width: 0.34, draggable: true },
-  { id: 'tapes', url: '/assets/obj/tapes.webp', left: 0.03, top: 0.46, width: 0.26, draggable: true },
   { id: 'stk-photo', url: '/assets/obj2/stk4.webp', left: 0.13, top: 0.45, width: 0.14, rot: -5, draggable: true },
   { id: 'stk-flower', url: '/assets/obj2/stk9.webp', left: 0.73, top: 0.54, width: 0.13, rot: -6, draggable: true },
 
-  // 原版门内侧有更多贴纸，为了减少视觉噪音，此版暂时不展示那些
-  // 装饰。
-  // 0.85 以下留给
-  // 吸附在门板底部的实体打字机，拖动时也不会被这些默认位置挡住。
+  // 其余密集贴纸暂时隐藏；下部留给具有 CONTACT 交互的实体打字机。
 ]
 
 /* ============================================================================
