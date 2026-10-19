@@ -8,7 +8,7 @@
   /* 与参考一致的高调冷白。参考背景实测 #f9f7fa 且几乎没有可辨识的渐变环，
      所以这里只留极浅的一层落差，不要出现能看出边界的光晕 */
   background:
-    linear-gradient(180deg, #faf9fb 0%, #f7f6f9 62%, #f2f1f5 100%);
+    linear-gradient(145deg, #faf7f2 0%, #f6f1ea 58%, #ede5dc 100%);
   touch-action: none;
 }
 
@@ -60,9 +60,9 @@
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.94);
   box-shadow:
-    0 1px 2px rgba(40, 70, 100, 0.14),
-    0 6px 18px rgba(40, 70, 100, 0.16);
-  color: #17313a;
+    0 1px 2px rgba(82, 67, 52, 0.12),
+    0 6px 18px rgba(82, 67, 52, 0.13);
+  color: #3e3833;
   font: inherit;
   white-space: nowrap;
   pointer-events: none;
@@ -85,7 +85,7 @@
 .hot3d__btn:focus-visible {
   opacity: 1;
   transform: none;
-  outline: 2px solid #2ea7d4;
+  outline: 2px solid #9a8774;
   outline-offset: 3px;
 }
 
@@ -100,7 +100,7 @@
   font-style: normal;
   font-size: 9px;
   letter-spacing: 0.16em;
-  color: #7b8e97;
+  color: #948b82;
 }
 
 /* ── 缩放控件（§11.2 / §15.4）────────────────────────────────
@@ -148,7 +148,7 @@
 }
 
 .zoomc__b:focus-visible {
-  outline: 2px solid #2ea7d4;
+  outline: 2px solid #9a8774;
   outline-offset: 3px;
 }
 
@@ -163,8 +163,8 @@
 }
 
 .zoomc__b--reset[data-on] {
-  background: #2ea7d4;
-  border-color: #2ea7d4;
+  background: #9a8774;
+  border-color: #9a8774;
   color: #fff;
 }
 
