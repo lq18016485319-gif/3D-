@@ -1,16 +1,16 @@
 :root {
-  --paper: #f8f7fa;
-  --paper-warm: #fbfaf7;
-  --ink: #14161a;
-  --ink-soft: #4c5058;
-  --ink-faint: #9aa0a8;
-  --cyan: #2ab0c5;
-  --cyan-deep: #1c93a8;
-  --lime: #c8f322;
-  --klein: #1b28d8;
-  --red: #e0322a;
-  --rust: #d1522c;
-  --cork: #9c6338;
+  --paper: #faf7f2;
+  --paper-warm: #f6f1ea;
+  --ink: #24211e;
+  --ink-soft: #686059;
+  --ink-faint: #a59b91;
+  --cyan: #b7a89a;
+  --cyan-deep: #8b7969;
+  --lime: #e8dfd3;
+  --klein: #8e8984;
+  --red: #bb948e;
+  --rust: #c0a18d;
+  --cork: #b49b82;
 
   --font-ui: 'Inter', -apple-system, 'Helvetica Neue', sans-serif;
   --font-cn: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
