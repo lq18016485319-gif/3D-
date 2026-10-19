@@ -9,31 +9,31 @@
 
 export const PALETTE = {
   /** 门面：最浅的一层蓝白（采样 #d3dde7） */
-  door: '#dbe6f1',
+  door: '#eee9e1',
   /** 门内侧：比外侧再亮一点（采样 #d5e9f0） */
-  doorInner: '#e3eef7',
+  doorInner: '#f8f3eb',
   /** 柜壳与立柱（采样 #aec6de） */
-  frame: '#a8c4de',
+  frame: '#dbd3c8',
   /** 顶盖：受光最足（采样 #cfdce4） */
-  cap: '#c6d9e7',
+  cap: '#f1eae0',
   /** 底座 */
-  plinth: '#b2c8dc',
+  plinth: '#d5cbc0',
   /** 柜腔内壁：饱和的中蓝，深处靠 AO 压暗（采样 #3b628d ~ #638eae） */
-  cavity: '#4d7cab',
+  cavity: '#b3a79b',
   /** 柜腔后壁比侧壁亮一点，避免整腔糊成一块 */
-  cavityBack: '#6094c0',
+  cavityBack: '#c5b9ad',
   /** 隔板（采样 #95b5ca） */
-  shelf: '#a6c1d8',
+  shelf: '#e6ddd1',
   /** 把手底板（采样 #7398b5 在阴影里） */
-  handlePlate: '#93a9b8',
+  handlePlate: '#b8afa5',
   /** 把手蓝色嵌条 */
-  handleGrip: '#6fa3c8',
+  handleGrip: '#807970',
   /** 通风槽底衬：槽与槽之间那条暗色 */
-  ventBack: '#7690a8',
+  ventBack: '#bbb1a6',
 } as const
 
 /** 柜体烤漆的通用参数 */
-export const PAINT = { roughness: 0.52, metalness: 0.08 } as const
+export const PAINT = { roughness: 0.62, metalness: 0.12 } as const
 /** 柜腔内壁：更哑，避免内部出现不该有的反光 */
 export const MATTE = { roughness: 0.82, metalness: 0.02 } as const
 /** 把手：金属感稍强 */
